@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+
+            body {
+                background-color: yellowgreen;
+
+            }
+
+            header {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 1em 0em;
+            }
+
+            #content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            .board {
+                height: 600px;
+                width: 600px;
+                background-color: white;
+            }
+
+            /*body {
+                background-color: yellowgreen;
+                text-align: center;
+            }
+
+            #magicbord {
+                background-color: blue;
+                height: 800px;
+                width: 800px;
+                margin: auto;
+            }*/
+        </style>
+    
+        <!--<script>
+            /**function onButtonClicked() {
+            
+                var magicbord = document.getElementById("magicbord");
+                document.getElementById("magicbord") .style.backgroundColor= "green"; 
+                
+            }
+                **/
+
+
+
+
+           
+        </script>-->
+    </head>
+    <body>
+        <header>
+            <button>Start</button>
+        </header>
+
+        <div id="content"></div>
+        
+
+        <script>
+                var contentDiv = document.getElementById("content");
+                var board = document.createElement("div");
+                board.className= "board";
+                contentDiv.appendChild(board);
+        
+        </script>
+        
+        <!-- <button id="toggle" class="unchecked" onclick="onButtonClicked()">Klicka här</button>
+       
+        <div id="magicbord"></div> -->
+    </body>
+</html>

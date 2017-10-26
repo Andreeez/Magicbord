@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+             body {
+                background-color: yellowgreen;
+
+            }
+
+            header {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 1em 0em;
+            }
+
+            #content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            .board {
+                height: 600px;
+                width: 600px;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                
+            }
+
+            .row1 {
+                background-color: black;
+                height: 100px;
+                width: 600px;
+                
+            }
+
+            .row2 {
+                background-color: yellow;
+                height: 600px;
+                width: 30px;
+            }
+        
+        </style>
+
+    </head>
+    <body>
+            <header>
+                    <button>Start</button>
+                </header>
+                <div id="content">
+                    
+
+
+                </div>
+
+
+                <script>
+                        var contentDiv = document.getElementById("content");
+                        var board = document.createElement("div");
+                        board.className = "board";
+                       
+                        for(var y = 0; y < 8; y++) {
+                            addRowToBoard();
+                            
+
+                        }
+
+                        
+                        /**var row2 = document.createElement("div");
+                        row2.className="row2";
+                        row1x.appendChild(row2); **/
+
+                        contentDiv.appendChild(board);
+
+                        function addRowToBoard(){
+                            var row1 = document.createElement("div");
+                            row1.className="row1";
+                            if (y%2) {
+                            row1.style.backgroundColor = "black;";
+                            } else {
+                                row1.style.backgroundColor = "white";
+                            }
+                            board.appendChild(row1);
+
+
+
+                        }
+                        
+                        
+
+
+                </script>
+                
+
+
+    </body>
+
+<html>
